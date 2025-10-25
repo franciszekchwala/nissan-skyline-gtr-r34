@@ -1,99 +1,156 @@
-<html>
-	<head>
-		<title>Nissan Skyline GTR R34</title>
-	</head>
-	
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" body style="background-image: urlS('tlo.png'); background-size: cover; background-repeat: repeat;">
- <style>
-        body {
-			color: white; 
-            font-family: 'Oswald', sans-serif;
-            background-image: url('tlo.png');
-            background-size: cover;
-            background-repeat: repeat;
-        }
-    </style>
-	
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Skyline GTR R34</title>
 
-	<body style="font-family: 'Oswald', sans-serif;">
-	<h1> <p align="center">Nissan Skyline GTR R34</p>
-<br>
-	<h2>Silnik:</h2>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-Skyline R34 jest napędzany przez legendarny 2.6-litrowy,
-<br> 6-cylindrowy silnik RB26DETT z podwójnym doładowaniem (twin-turbo).<br>
-Silnik ten jest niezwykle trwały i dał początek wielu modyfikacjom tuningowym,
-<br> dzięki którym osiągał moc nawet powyżej 500 KM w wersjach modyfikowanych.
-<br> Charakteryzuje się mocnym momentem obrotowym w średnich i wysokich obrotach,<br>
- co czyni jazdę dynamiczną i precyzyjną.
-	<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\Nissan_RB26DETT_Engine_-_Front.jpg"
-		style="position: absolute; top: 135px; right: 900px;">
-	
-	<br>
-	
-	<h2>Moc:</h2>
+  <style>
+    body {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      background-image: url('images/tlo.jpg');
+      background-size: cover;
+      background-repeat: repeat;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
 
-	Oficjalnie moc R34 wynosiła 276 KM (207 kW), jednak w rzeczywistości wiele egzemplarzy przekraczało 
-	<br>300 KM dzięki konserwatywnej polityce Japońskiej federacji motoryzacyjnej.
-	<br>Silnik RB26DETT umożliwia bardzo płynne przyspieszenie i natychmiastową reakcję na gaz dzięki turbosprężarkom.
-		
-		<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\Nissan_R34_high_contrast.jpg" 
-		style="position: absolute; top: 392px; right: 700px;" <img src="obrazek.jpg" width="300" height="200" 
-		alt="nissan niebieski tunel"></p>
-		
-		
-	<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\flipped_image.jpg"
-		style="position: absolute; top: 25px; right: 25px;" <img src="obrazek.jpg" width="615" height="1000" 
-		alt="poboczny wysoki"></p>	
-	<br>
-	<h2>Prędkość maksymalna:</h2>
+    h1, h2 {
+      text-align: center;
+    }
 
-Maksymalna prędkość wynosi około 250 km/h (160 mph),
-<br>co w latach 90. stawiało R34 w czołówce sportowych samochodów.
-Dzięki napędowi na cztery koła i <br>
-doskonałej aerodynamice samochód jest stabilny nawet przy wysokich prędkościach,
-<br>zarówno na torze, jak i w zakrętach.
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
 
-	<br>
-	<br>
-	<h2>Skrzynia biegów i napęd:</h2>
-6-biegowa manualna skrzynia Getrag pozwala na precyzyjną <br>
-zmianę biegów i pełną kontrolę nad mocą silnika.
-Napęd na cztery koła ATTESA E-TS Pro dynamicznie rozdziela moment obrotowy <br>
-między przednią i tylną oś w zależności od warunków, zapewniając optymalną przyczepność.
-System ten sprawia,<br>
-że R34 jest niezwykle stabilny w zakrętachi łatwy do kontrolowania nawet przy dużych prędkościach.\
+    section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
 
-		<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\maxresdefault.jpg"
-		style="position: absolute; top: 596px; right: 850px;" <img src="obrazek.jpg" width="300" height="200" 
-		alt="nissan biały wyscig"></p>
-		
-		
-		<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\96-nissan-skyline-gt-r-r34-ubg-interior.jpg" 
-		style="position: absolute; top: 800px; right: 700px;" <img src="obrazek.jpg" width="280" height="180" 
-		alt="nissan środek"></p>
-		<br>
-		<br>
-		<h2>Design:</h2>
+    .autor {
+      text-align: left;
+      font-size: 28px;
+      margin-top: 50px;
+    }
 
-R34 ma jedną z najbardziej rozpoznawalnych sylwetek w historii motoryzacji: szerokie nadwozie,<br>
-agresywne linie i charakterystyczne okrągłe tylne światła.
-Aerodynamiczny kształt samochodu zmniejsza opór powietrza <br>
-i poprawia stabilność przy dużych prędkościach.
-Wnętrze łączy sportową funkcjonalność z technologią: <br>
-charakterystyczne zegary Multi-Function Display (MFD) pokazują parametry silnika,
-<br>turbosprężarek i moment obrotowy w czasie rzeczywistym.
+    /* Układ dla dużych ekranów */
+    @media (min-width: 768px) {
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+      }
 
-		
-		<p align="right"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\Nissan_Skyline_-_2F2F.jpg"
-		style="position: absolute; top: 1050px; right: 800px;" <img src="obrazek.jpg" width="350" height="200" 
-		alt="nissan fff"></p>
-		
-		<br>
-		<br>
-			<p align="center"><img src="C:\Users\PC\Desktop\NIssan_Skyline_GTR_R34\9c19aece3224ecc19e5e7759d73b5a0b.jpg"
-			<img src="obrazek.jpg" width="950" height="600"></p>
-			
-			<br>
-			<br>
-			<p align="left" "bottom" style="font-size: 50px;" ><b>Autor: Franciszek Chwała <u><i>Kl.VIIB</u></i></b></p>
+      section img {
+        max-width: 90%;
+      }
+    }
+
+    /* Usprawnienia dla małych ekranów */
+    @media (max-width: 767px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .autor {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Nissan Skyline GTR R34</h1>
+
+  <section class="grid">
+    <div>
+      <h2>Silnik</h2>
+      <p>
+        Skyline R34 jest napędzany przez legendarny 2.6-litrowy, 6-cylindrowy silnik RB26DETT z podwójnym doładowaniem (twin-turbo). 
+        Silnik ten jest niezwykle trwały i dał początek wielu modyfikacjom tuningowym, dzięki którym osiągał moc nawet powyżej 500 KM w wersjach modyfikowanych.
+      </p>
+    </div>
+    <div><img src="images/N_silnik.jpg" alt="Silnik R34"></div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Moc</h2>
+      <p>
+        Oficjalnie moc R34 wynosiła 276 KM (207 kW), jednak w rzeczywistości wiele egzemplarzy przekraczało 300 KM. 
+        Silnik RB26DETT umożliwia bardzo płynne przyspieszenie i natychmiastową reakcję na gaz dzięki turbosprężarkom.
+      </p>
+    </div>
+    <div><img src="images/N_tunel.jpg" alt="Nissan w tunelu"></div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Prędkość maksymalna</h2>
+      <p>
+        Maksymalna prędkość wynosi około 250 km/h (160 mph). 
+        Dzięki napędowi na cztery koła i doskonałej aerodynamice samochód jest stabilny nawet przy wysokich prędkościach.
+      </p>
+    </div>
+    <div><img src="images/N_flipped.jpg" alt="Nissan z boku"></div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Skrzynia biegów i napęd</h2>
+      <p>
+        6-biegowa manualna skrzynia Getrag pozwala na precyzyjną zmianę biegów i pełną kontrolę nad mocą silnika.
+        Napęd na cztery koła ATTESA E-TS Pro dynamicznie rozdziela moment obrotowy między osie, zapewniając optymalną przyczepność.
+      </p>
+    </div>
+    <div><img src="images/N_wyscig.jpg" alt="R34 w wyścigu"></div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Wnętrze</h2>
+      <p>
+        Wnętrze łączy sportową funkcjonalność z technologią: zegary Multi-Function Display (MFD) pokazują parametry silnika,
+        turbosprężarek i moment obrotowy w czasie rzeczywistym.
+      </p>
+    </div>
+    <div><img src="images/N_interior.jpg" alt="Wnętrze Nissana"></div>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Design</h2>
+      <p>
+        R34 ma jedną z najbardziej rozpoznawalnych sylwetek w historii motoryzacji — szerokie nadwozie, agresywne linie i charakterystyczne okrągłe tylne światła.
+      </p>
+    </div>
+    <div><img src="images/N_fff.jpg" alt="R34 z przodu"></div>
+  </section>
+
+  <section>
+    <img src="images/N_pokaz.jpg" alt="Nissan pokaz">
+  </section>
+
+  <p class="autor"><b>Autor: Franciszek Chwała <u><i>Kl. VIIB</i></u></b></p>
+
+</body>
+</html>
