@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Części Nissana GTR R34</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
@@ -39,6 +38,11 @@
       margin-bottom: 40px;
     }
 
+    .table-container {
+      overflow-x: auto; /* umożliwia przewijanie poziome */
+      margin-bottom: 40px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -47,6 +51,7 @@
       border-radius: 10px;
       overflow: hidden;
       font-size: 18px;
+      min-width: 600px; /* minimalna szerokość dla dużych tabel */
     }
 
     th, td {
@@ -87,6 +92,24 @@
       margin: auto;
     }
 
+    /* Responsywność dla urządzeń mobilnych */
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+      table {
+        font-size: 14px;
+        min-width: 0; /* tabela dopasowuje się do ekranu */
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+      a {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 
@@ -95,82 +118,84 @@
   <div class="container">
     <h1>Części Nissana GTR R34</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Część</th>
-          <th>Opis</th>
-          <th>Typowe materiały / technologie</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Silnik RB26DETT</td>
-          <td>Rzędowy, 6-cylindrowy silnik twin-turbo o pojemności 2.6L. Legenda japońskiej motoryzacji.</td>
-          <td>Żeliwo, aluminium, stal nierdzewna</td>
-        </tr>
-        <tr>
-          <td>Turbosprężarki</td>
-          <td>Podwójne turbosprężarki zwiększające moc i moment obrotowy silnika.</td>
-          <td>Stal, ceramika</td>
-        </tr>
-        <tr>
-          <td>Skrzynia biegów Getrag</td>
-          <td>6-biegowa, manualna skrzynia zapewniająca precyzyjne zmiany przełożeń.</td>
-          <td>Stal, aluminium</td>
-        </tr>
-        <tr>
-          <td>Napęd ATTESA E-TS Pro</td>
-          <td>System rozdziału momentu obrotowego pomiędzy osiami 4x4.</td>
-          <td>Elektronika, czujniki, sterownik</td>
-        </tr>
-        <tr>
-          <td>Zawieszenie</td>
-          <td>Wielowahaczowe, sportowe zawieszenie dla stabilności i kontroli.</td>
-          <td>Stal, aluminium, poliuretan</td>
-        </tr>
-        <tr>
-          <td>Układ hamulcowy Brembo</td>
-          <td>Wysokowydajny system hamulcowy zapewniający skuteczne zatrzymanie pojazdu.</td>
-          <td>Żeliwo, stal, ceramika</td>
-        </tr>
-        <tr>
-          <td>Układ wydechowy</td>
-          <td>Dwururowy sportowy wydech z charakterystycznym dźwiękiem.</td>
-          <td>Stal nierdzewna, tytan</td>
-        </tr>
-        <tr>
-          <td>Dyferencjały</td>
-          <td>Przedni, centralny i tylny – odpowiedzialne za równomierny rozdział mocy.</td>
-          <td>Stal hartowana</td>
-        </tr>
-        <tr>
-          <td>Karoseria</td>
-          <td>Aerodynamiczne nadwozie o agresywnym wyglądzie.</td>
-          <td>Stal, aluminium, włókno szklane</td>
-        </tr>
-        <tr>
-          <td>Wnętrze</td>
-          <td>Sportowa kabina z MFD (Multi-Function Display) i kubełkowymi fotelami.</td>
-          <td>Skóra, alcantara, aluminium</td>
-        </tr>
-        <tr>
-          <td>Układ chłodzenia</td>
-          <td>Duża chłodnica i intercooler utrzymujące optymalną temperaturę silnika.</td>
-          <td>Aluminium, guma</td>
-        </tr>
-        <tr>
-          <td>Układ kierowniczy</td>
-          <td>Precyzyjny układ wspomagany hydraulicznie.</td>
-          <td>Stal, aluminium</td>
-        </tr>
-        <tr>
-          <td>Felgi i opony</td>
-          <td>Lekkie felgi aluminiowe z oponami o wysokiej przyczepności.</td>
-          <td>Aluminium, guma</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Część</th>
+            <th>Opis</th>
+            <th>Typowe materiały / technologie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Silnik RB26DETT</td>
+            <td>Rzędowy, 6-cylindrowy silnik twin-turbo o pojemności 2.6L. Legenda japońskiej motoryzacji.</td>
+            <td>Żeliwo, aluminium, stal nierdzewna</td>
+          </tr>
+          <tr>
+            <td>Turbosprężarki</td>
+            <td>Podwójne turbosprężarki zwiększające moc i moment obrotowy silnika.</td>
+            <td>Stal, ceramika</td>
+          </tr>
+          <tr>
+            <td>Skrzynia biegów Getrag</td>
+            <td>6-biegowa, manualna skrzynia zapewniająca precyzyjne zmiany przełożeń.</td>
+            <td>Stal, aluminium</td>
+          </tr>
+          <tr>
+            <td>Napęd ATTESA E-TS Pro</td>
+            <td>System rozdziału momentu obrotowego pomiędzy osiami 4x4.</td>
+            <td>Elektronika, czujniki, sterownik</td>
+          </tr>
+          <tr>
+            <td>Zawieszenie</td>
+            <td>Wielowahaczowe, sportowe zawieszenie dla stabilności i kontroli.</td>
+            <td>Stal, aluminium, poliuretan</td>
+          </tr>
+          <tr>
+            <td>Układ hamulcowy Brembo</td>
+            <td>Wysokowydajny system hamulcowy zapewniający skuteczne zatrzymanie pojazdu.</td>
+            <td>Żeliwo, stal, ceramika</td>
+          </tr>
+          <tr>
+            <td>Układ wydechowy</td>
+            <td>Dwururowy sportowy wydech z charakterystycznym dźwiękiem.</td>
+            <td>Stal nierdzewna, tytan</td>
+          </tr>
+          <tr>
+            <td>Dyferencjały</td>
+            <td>Przedni, centralny i tylny – odpowiedzialne za równomierny rozdział mocy.</td>
+            <td>Stal hartowana</td>
+          </tr>
+          <tr>
+            <td>Karoseria</td>
+            <td>Aerodynamiczne nadwozie o agresywnym wyglądzie.</td>
+            <td>Stal, aluminium, włókno szklane</td>
+          </tr>
+          <tr>
+            <td>Wnętrze</td>
+            <td>Sportowa kabina z MFD (Multi-Function Display) i kubełkowymi fotelami.</td>
+            <td>Skóra, alcantara, aluminium</td>
+          </tr>
+          <tr>
+            <td>Układ chłodzenia</td>
+            <td>Duża chłodnica i intercooler utrzymujące optymalną temperaturę silnika.</td>
+            <td>Aluminium, guma</td>
+          </tr>
+          <tr>
+            <td>Układ kierowniczy</td>
+            <td>Precyzyjny układ wspomagany hydraulicznie.</td>
+            <td>Stal, aluminium</td>
+          </tr>
+          <tr>
+            <td>Felgi i opony</td>
+            <td>Lekkie felgi aluminiowe z oponami o wysokiej przyczepności.</td>
+            <td>Aluminium, guma</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div style="text-align:center;">
       <a href="index.html">⬅️ Powrót na stronę główną</a>
