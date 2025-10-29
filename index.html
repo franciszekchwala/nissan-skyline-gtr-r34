@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
@@ -11,11 +11,11 @@
     body {
       color: white;
       font-family: 'Oswald', sans-serif;
-     background-image: url('images/tlo.jpg');
-     background-size: cover;      
-     background-repeat: no-repeat;   
-     background-attachment: fixed;    
-     background-position: center;
+      background-image: url('images/tlo.jpg');
+      background-size: cover;      
+      background-repeat: no-repeat;   
+      background-attachment: fixed;    
+      background-position: center;
       margin: 0;
       padding: 20px;
       line-height: 1.6;
@@ -74,6 +74,25 @@
         text-align: center;
         font-size: 22px;
       }
+    }
+
+    /* 🔹 Styl przycisku do podstrony */
+    .czesci-link {
+      display: inline-block;
+      text-align: center;
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .czesci-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -162,49 +181,55 @@
     </div>
     <img src="images/N_fff.jpg" alt="Nissan R34 z przodu">
   </section>
-<section class="grid">
-  <div>
-    <h2>Najważniejsze części i podzespoły</h2>
-    <table style="width:100%; border-collapse:collapse; text-align:left; background:rgba(0,0,0,0.6); color:white; border-radius:10px;">
-      <thead>
-        <tr style="background:rgba(255,255,255,0.1);">
-          <th style="padding:10px; border:1px solid #555;">Część</th>
-          <th style="padding:10px; border:1px solid #555;">Opis</th>
-          <th style="padding:10px; border:1px solid #555;">Podelementy</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding:10px; border:1px solid #555;">Silnik</td>
-          <td style="padding:10px; border:1px solid #555;">RB26DETT – 2.6L, 6-cylindrowy, twin-turbo.</td>
-          <td style="padding:10px; border:1px solid #555;">Tłoki, turbiny, układ paliwowy</td>
-        </tr>
-        <tr>
-          <td style="padding:10px; border:1px solid #555;">Skrzynia biegów</td>
-          <td style="padding:10px; border:1px solid #555;">6-biegowa manualna Getrag</td>
-          <td style="padding:10px; border:1px solid #555;">Sprzęgło, przekładnie, wał napędowy</td>
-        </tr>
-        <tr>
-          <td style="padding:10px; border:1px solid #555;">Zawieszenie</td>
-          <td style="padding:10px; border:1px solid #555;">Sportowe, wielowahaczowe</td>
-          <td style="padding:10px; border:1px solid #555;">Amortyzatory, sprężyny, wahacze</td>
-        </tr>
-        <tr>
-          <td style="padding:10px; border:1px solid #555;">Układ hamulcowy</td>
-          <td style="padding:10px; border:1px solid #555;">Wysokowydajne hamulce Brembo</td>
-          <td style="padding:10px; border:1px solid #555;">Tarcze, klocki, pompa hamulcowa</td>
-        </tr>
-        <tr>
-          <td style="padding:10px; border:1px solid #555;">Napęd 4x4 ATTESA E-TS Pro</td>
-          <td style="padding:10px; border:1px solid #555;">System rozdzielania momentu na osie</td>
-          <td style="padding:10px; border:1px solid #555;">Dyferencjały, czujniki, sterownik</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
-  <img src="images/N_pokaz.jpg" alt="Nissan Skyline na pokazie">
-</section>
+  <section class="grid">
+    <div>
+      <h2>Najważniejsze części i podzespoły</h2>
+      <table style="width:100%; border-collapse:collapse; text-align:left; background:rgba(0,0,0,0.6); color:white; border-radius:10px;">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.1);">
+            <th style="padding:10px; border:1px solid #555;">Część</th>
+            <th style="padding:10px; border:1px solid #555;">Opis</th>
+            <th style="padding:10px; border:1px solid #555;">Podelementy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px; border:1px solid #555;">Silnik</td>
+            <td style="padding:10px; border:1px solid #555;">RB26DETT – 2.6L, 6-cylindrowy, twin-turbo.</td>
+            <td style="padding:10px; border:1px solid #555;">Tłoki, turbiny, układ paliwowy</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #555;">Skrzynia biegów</td>
+            <td style="padding:10px; border:1px solid #555;">6-biegowa manualna Getrag</td>
+            <td style="padding:10px; border:1px solid #555;">Sprzęgło, przekładnie, wał napędowy</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #555;">Zawieszenie</td>
+            <td style="padding:10px; border:1px solid #555;">Sportowe, wielowahaczowe</td>
+            <td style="padding:10px; border:1px solid #555;">Amortyzatory, sprężyny, wahacze</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #555;">Układ hamulcowy</td>
+            <td style="padding:10px; border:1px solid #555;">Wysokowydajne hamulce Brembo</td>
+            <td style="padding:10px; border:1px solid #555;">Tarcze, klocki, pompa hamulcowa</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #555;">Napęd 4x4 ATTESA E-TS Pro</td>
+            <td style="padding:10px; border:1px solid #555;">System rozdzielania momentu na osie</td>
+            <td style="padding:10px; border:1px solid #555;">Dyferencjały, czujniki, sterownik</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 🔹 NOWY PRZYCISK POD TABELĄ -->
+      <div style="text-align:center;">
+        <a href="czesci.html" class="czesci-link">➡️ Zobacz wszystkie części Nissana GTR R34</a>
+      </div>
+    </div>
+
+    <img src="images/N_pokaz.jpg" alt="Nissan Skyline na pokazie">
+  </section>
 
   <section style="text-align:center;">
     <img src="images/N_wystawa.jpg" alt="Nissan Skyline na pokazie">
@@ -214,6 +239,3 @@
 
 </body>
 </html>
-
-
-
